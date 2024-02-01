@@ -1,0 +1,7 @@
+#!/usr/bin/env mongo
+
+var databaseName = "my_db";
+
+var query = { "name": { $regex: /^Holberton/i } };
+
+db.getSiblingDB(databaseName).school.find(query).forEach(printjson);

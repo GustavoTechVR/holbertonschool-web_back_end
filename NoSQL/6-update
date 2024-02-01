@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+// my comment
+
+if [ "$#" -ne 1 ]; then
+    echo "Usage: $0 <database_name>"
+    exit 1
+fi
+
+echo "db.school.update({ name: 'Holberton school' }, { \$set: { address: '972 Mission street' } }, { multi: true })" | mongo $1

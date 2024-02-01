@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+// my comment
+echo "use my_db" | mongo | grep -v "connecting to" | grep -v "MongoDB shell version" | grep -v "bye" | sed '/^\s*$/d' || echo "db.createCollection('my_db')" | mongo
