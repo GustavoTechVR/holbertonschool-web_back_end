@@ -73,7 +73,7 @@ if __name__ == "__main__":
         should_err = server.get_page(-10, 2)
     except AssertionError:
         print("AssertionError raised with negative values")
-
+    
     try:
         should_err = server.get_page(0, 0)
     except AssertionError:
