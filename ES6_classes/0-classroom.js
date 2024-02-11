@@ -1,4 +1,4 @@
-// 0-classroom.js
+// 0-classroom.js task
 
 export default class ClassRoom {
     constructor(maxStudentsSize) {
